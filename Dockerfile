@@ -10,6 +10,8 @@ RUN apk add --no-cache git build-base
 RUN apk add --update tzdata
 # Use curl to send API requests
 RUN apk add --update curl
+# Add js runtime for compiling coffeescript
+RUN apk add nodejs
 
 # debug
 RUN bundle version
